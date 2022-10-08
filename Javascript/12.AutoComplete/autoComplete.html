@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Autocomplete</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+  
+</head>
+
+<body style="background-image: url(img/background.jpg); background-size: cover;">
+
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4 m12 s12">
+            <a href="#!" class="brand-logo deep-orange-text" style="margin-left: 70px; font-family: 'audiowide'; font-size: 27px;">Pradipta | Web-Dev</a>
+            <!--mobile mode-->
+            <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down" style="margin-right: 70px;">
+                <li><a class="deep-orange-text" href="#!">Profile</a></li>
+                <li><a class="deep-orange-text" href="#!">About</a></li>
+                <li><a class="deep-orange-text" href="#!">Help</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger deep-orange-text" href="#!" data-target="dropdown2">Code<i class="material-icons right deep-orange-text">arrow_drop_down</i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container center" style="margin-top: 30px;">
+
+      <!--AUTOCOMPLETE FORM-->
+      <h4 class="blue-grey-text">Form Input Autocomplete</h4>
+
+      <div class="row">
+
+            <div class="col s12">
+
+              <div class="row">
+
+                <div class="input-field col s12 orange-text">
+                  <i class="material-icons prefix">person</i>
+                  <label for="name" class="orange-text">Name</label>
+                  <input type="text" id="name" class="autocomplete">
+                </div>
+
+                <div class="input-field col s6 orange-text">
+                  <i class="material-icons prefix">mail</i>
+                  <label for="email" class="orange-text">Email</label>
+                  <input type="email" id="email" class="autocomplete">
+                </div>
+
+                <div class="input-field col s6 orange-text">
+                  <i class="material-icons prefix">lock</i>
+                  <label for="password" class="orange-text">Password</label>
+                  <input type="password" id="password" class="autocomplete">
+                </div>
+
+                <div class="input-field col s12 orange-text">
+                  <i class="material-icons prefix">place</i>
+                  <label for="place" class="orange-text">Address</label>
+                  <input type="text" id="place" class="autocomplete">
+                </div>
+
+                <div class="input-field col s12 orange-text">
+                  <i class="material-icons prefix">phone_iphone</i>
+                  <label for="phone" class="orange-text">Phone Number</label>
+                  <input type="number" id="phone" class="autocomplete">
+                </div>
+
+                <div class="input-field col s6 orange-text">
+                  <i class="material-icons prefix">work</i>
+                  <label for="work" class="orange-text">Field of Work</label>
+                  <input type="text" id="work" class="autocomplete">
+                </div>
+
+                <div class="input-field col s6 orange-text">
+                  <i class="material-icons prefix">laptop_mac</i>
+                  <label for="job" class="orange-text">Job Description</label>
+                  <input type="text" id="job" class="autocomplete">
+                </div>
+
+                <div class="input-field col s12 orange-text">
+                  <i class="material-icons prefix">language</i>
+                  <label for="site" class="orange-text">Your Site</label>
+                  <input type="text" id="site" class="autocomplete">
+                </div>
+
+              </div>
+
+            </div>
+
+      </div>
+
+    </div>
+
+
+       <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        const autocomplete= document.querySelectorAll('.autocomplete');
+        M.Autocomplete.init(autocomplete);
+        
+    </script>
+
+</body>
+</html>

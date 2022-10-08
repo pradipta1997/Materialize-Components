@@ -1,0 +1,48 @@
+body {
+
+    background-color: #cce6f8;
+}
+
+/*----------------------------------*/
+
+/*CONTAINER*/
+.container {
+
+    margin-top: 50px;
+}
+
+/*----------------------------------*/
+
+/*BADGES DROPDOWN*/
+.dropdown-text {
+
+    margin-top: 40px;
+}
+
+/*----------------------------------*/
+
+/*BADGES NAVBAR*/
+.navbar-text {
+
+    margin-top: 40px;
+}
+
+.nav-wrapper .brand-logo {
+
+    font-family: 'audiowide';
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.nav-wrapper ul {
+
+    margin-right: 10px;
+}
+
+/*----------------------------------*/
+
+/*BADGES COLLAPSIBLE*/
+.collapsible-text {
+
+    margin-top: 40px;
+}

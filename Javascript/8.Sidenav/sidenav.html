@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>SideNav</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+        <style>
+
+            .background img {
+
+                width: 300px;
+            }
+
+        </style>
+
+  
+</head>
+
+<body style="background-image: url(img/background.jpg); background-size: cover;">
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-wrapper teal darken-3 m12 s12">
+            <a href="#!" class="brand-logo white-text" style="margin-left: 70px; font-family: 'audiowide'; font-size: 27px;">Pradipta | Web-Dev</a>
+            <!--mobile mode-->
+            <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down" style="margin-right: 70px;">
+                <li><a class="white-text" href="#!">Profile</a></li>
+                <li><a class="white-text" href="#!">About</a></li>
+                <li><a class="white-text" href="#!">Help</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown2">Code<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+            </ul>
+
+        </div>
+
+
+                <!--Dropdown Structure NavBar-->
+                <ul id='dropdown2' class='dropdown-content'>
+                    <li><a href="#!"><i class="material-icons">laptop_mac</i>HTML</a></li>
+                    <li><a href="#!"><i class="material-icons">laptop_mac</i>CSS</a></li>
+                    <li><a href="#!"><i class="material-icons">laptop_mac</i>Javascript</a></li>
+                    <li><a href="#!"><i class="material-icons">laptop_mac</i>PHP</a></li>
+                    <li><a href="#!"><i class="material-icons">laptop_mac</i>jQuery</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!"><i class="material-icons">desktop_mac</i>C++</a></li>
+                    <li><a href="#!"><i class="material-icons">desktop_mac</i>Visual Basic</a></li>
+                </ul>
+
+    </nav>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--SIDEBAR-->
+    <ul id="slide-out" class="sidenav teal darken-3">
+
+        <li>
+            <div class="user-view">
+
+                <div class="background">
+                    <img src="img/image4.png">
+                </div>
+
+                <a href="#user"><img class="circle" src="img/profile.png"></a>
+                <a href="#name"><span class="white-text name" style="font-weight: bold; font-size: 20px;">Pradipta Ramadhan</span></a>
+                <a href="#email"><span class="white-text email" style="font-weight: bold;">pradiptaramadhan1997@gmail.com</span></a>
+
+            </div>
+        </li>
+
+        <li><a class="white-text" href="#!"><i class="material-icons white-text">face</i>Profile</a></li>
+        <li><a class="white-text"href="#!"><i class="material-icons white-text">info</i>About</a></li>
+        <li><a class="white-text" href="#!"><i class="material-icons white-text">help</i>Help</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">-Program Language-</a></li>
+         <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger waves-effect white-text" href="#!" data-target="dropdown1">Code<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+
+
+
+        <!--Dropdown Structure SideNav-->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">laptop_mac</i>HTML</a></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">laptop_mac</i>CSS</a></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">laptop_mac</i>Javascript</a></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">laptop_mac</i>PHP</a></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">laptop_mac</i>jQuery</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">desktop_mac</i>C++</a></li>
+            <li><a class="teal-text darken-3" href="#!"><i class="material-icons teal-text darken-3">desktop_mac</i>Visual Basic</a></li>
+        </ul>
+
+
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+
+        const dropdown = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdown);
+
+    </script>
+
+</body>
+</html>

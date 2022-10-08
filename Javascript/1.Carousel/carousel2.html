@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Carousel 2</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body style="background-image: url(img/background.jpg); background-size: cover;">
+
+
+    <div class="container blue-grey" style="margin-top: 50px;">
+
+
+        <!--SPECIAL OPTION CAROUSEL-->
+        <h4 class="center white-text">Special Option Carousel</h4>
+
+        <div class="carousel carousel-slider center">
+
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white blue-grey-text lighten-2">button</a>
+            </div>
+
+            <div class="carousel-item pink accent-3 white-text" href="#one!">
+                <h2>Pink Panel</h2>
+                <p>Hello, This is your first panel :)</p>
+                <p>(Pradipta Ramadhan)</p>
+            </div>
+
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Yellow Panel</h2>
+                <p>And this is your second panel :)</p>
+                <p>(Pradipta Ramadhan)</p>
+            </div>
+
+            <div class="carousel-item teal darken-2 white-text" href="#three!">
+                <h2>Teal Panel</h2>
+                <p>Then this is your third panel :)</p>
+                <p>(Pradipta Ramadhan)</p>
+            </div>
+
+            <div class="carousel-item light-blue darken-2 white-text" href="#four!">
+                <h2>Blue Panel</h2>
+                <p>Last, This is your fourth panel :)</p>
+                <p>(Pradipta Ramadhan)</p>
+            </div>
+
+        </div> <!--penutup class carousel-->
+
+
+    </div> <!--penutup class container-->
+
+
+    <br><br><br>
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+    <!--VANILLA JAVASCRIPT-->
+
+    <script>
+
+        const carousel = document.querySelectorAll('.carousel');
+        M.Carousel.init(carousel, {
+
+            fullWidth: true,
+            indicators: true
+        });
+
+
+
+    </script>
+
+
+
+</body>
+</html>

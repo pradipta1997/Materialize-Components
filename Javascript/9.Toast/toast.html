@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Toast</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body style="background-image: url(img/background.jpg); background-size: cover;">
+
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-wrapper teal darken-3 m12 s12">
+            <a href="#!" class="brand-logo white-text" style="margin-left: 70px; font-family: 'audiowide'; font-size: 27px;">Pradipta | Web-Dev</a>
+            <!--mobile mode-->
+            <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down" style="margin-right: 70px;">
+                <li><a class="white-text" href="#!">Profile</a></li>
+                <li><a class="white-text" href="#!">About</a></li>
+                <li><a class="white-text" href="#!">Help</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown2">Code<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container center" style="margin-top: 80px;">
+
+        <!--TOAST-->
+        <h4>Toast Calling</h4>
+        <a onclick="M.toast({html: 'Hello There :) I Am Pradipta Ramadhan'})" class="btn pulse">Click Here</a>
+
+    </div>
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        M.toast({html: 'Hello There :) I Am Pradipta Ramadhan'})
+        
+    </script>
+
+</body>
+</html>

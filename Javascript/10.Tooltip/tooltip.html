@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Tooltip</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+        <style>
+
+           .btn {
+
+                margin-left: 150px;
+                margin-top: 50px;
+            }
+
+        </style>
+
+  
+</head>
+
+<body style="background-image: url(img/background.jpg); background-size: cover;">
+
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4 m12 s12">
+            <a href="#!" class="brand-logo deep-orange-text" style="margin-left: 70px; font-family: 'audiowide'; font-size: 27px;">Pradipta | Web-Dev</a>
+            <!--mobile mode-->
+            <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down" style="margin-right: 70px;">
+                <li><a class="deep-orange-text" href="#!">Profile</a></li>
+                <li><a class="deep-orange-text" href="#!">About</a></li>
+                <li><a class="deep-orange-text" href="#!">Help</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger deep-orange-text" href="#!" data-target="dropdown2">Code<i class="material-icons right deep-orange-text">arrow_drop_down</i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    
+
+        <!--TOOLTIP-->
+        <h4 class="center blue-grey-text" style="margin-top: 40px;">-Tooltip Hover-</h4>
+
+        <a class="btn tooltipped deep-orange darken-2" data-position="top" data-tooltip="I am a top tooltip">Hover me up!</a>
+        <a class="btn tooltipped deep-orange" data-position="right" data-tooltip="I am a right tooltip">Hover me right!</a>
+        <a class="btn tooltipped deep-orange lighten-1" data-position="bottom" data-tooltip="I am a bottom tooltip">Hover down!</a>
+        <a class="btn tooltipped deep-orange lighten-2" data-position="left" data-tooltip="I am a left tooltip">Hover left!</a>
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        const tooltip = document.querySelectorAll('.tooltipped');
+        M.Tooltip.init(tooltip);
+        
+    </script>
+
+</body>
+</html>

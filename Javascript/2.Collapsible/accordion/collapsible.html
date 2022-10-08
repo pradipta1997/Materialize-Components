@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Collapsible</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body style="background-image: url(background.jpg); background-size: cover;">
+
+  <div class="container" style="margin-top: 30px;">
+
+      <!--ACCORDION COLLAPSIBLE-->
+      <h4 class="center">Accordion Collapsible</h4>
+
+      <ul class="collapsible" style="width: 600px; margin-left: 150px;">
+          <li>
+            <div class="collapsible-header blue-grey darken-3 pink-text"><i class="material-icons">filter_1</i>First Accordion</div>
+            <div class="collapsible-body pink darken-1 white-text">
+              
+              <span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Ipsum laudantium animi, libero provident, nam saepe voluptate 
+                  veritatis repellendus quae dicta vel error placeat repellat ex, 
+                  iste illum obcaecati. Et accusantium in error eum id rerum repellat!                               
+              </span>
+
+            </div>
+          </li>
+          
+          <li>
+            <div class="collapsible-header blue-grey darken-3 pink-text"><i class="material-icons">filter_2</i>Second Accordion</div>
+            <div class="collapsible-body pink darken-1 white-text"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, officia.</span></div>
+          </li>
+
+          <li>
+            <div class="collapsible-header blue-grey darken-3 pink-text"><i class="material-icons">filter_3</i>Third Accordion</div>
+            <div class="collapsible-body pink darken-1 white-text"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+
+
+
+        <!--POPOUT COLLAPSIBLE-->
+      <h4 class="center" style="margin-top: 40px;">Popout Collapsible</h4>
+
+      <ul class="collapsible popout" style="width: 600px; margin-left: 150px;">
+          <li>
+            <div class="collapsible-header blue-grey darken-3 yellow-text accent-4"><i class="material-icons">filter_1</i>First Accordion</div>
+            <div class="collapsible-body yellow accent-4 black-text">
+              
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ipsum laudantium animi, libero provident, nam saepe voluptate 
+                    veritatis repellendus quae dicta vel error placeat repellat ex, 
+                    iste illum obcaecati. Et accusantium in error eum id rerum repellat! 
+              </span>
+
+            </div>
+          </li>
+          
+          <li>
+            <div class="collapsible-header blue-grey darken-3 yellow-text accent-4"><i class="material-icons">filter_2</i>Second Accordion</div>
+            <div class="collapsible-body yellow accent-4 black-text"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, officia.</span></div>
+          </li>
+
+          <li>
+            <div class="collapsible-header blue-grey darken-3 yellow-text accent-4"><i class="material-icons">filter_3</i>Third Accordion</div>
+            <div class="collapsible-body yellow accent-4 black-text"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+    
+  </div>
+
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../../materialize/js/materialize.min.js"></script>
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        const collapsible = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(collapsible);
+
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Material Box</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body style="background-image: url(background.jpg); background-size: cover;">
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-wrapper blue darken-4 m12 s12">
+            <a href="#!" class="brand-logo" style="margin-left: 70px; font-family: 'audiowide';">Pradipta | Web-Dev</a>
+            <a href="#mobile-nav" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down" style="margin-right: 70px;">
+                <li><a href="sass.html">Profile</a></li>
+                <li><a href="badges.html">About</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Code<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!--MATERIAL BOX-->
+    <div class="container" style="margin-top: 40px;">
+
+        <h4>Material Box</h4>
+        <div class="row">
+
+            <div class="col m6 s12">
+                <img class="materialboxed" width="450" src="jakarta.jpg">
+                <img class="materialboxed" style="margin-top: 5px;" width="450" src="tokyo.jpg">
+            </div>
+
+            <div class="col m6 s12">
+                <img class="materialboxed" width="450" src="la.jpg">
+                <img class="materialboxed" style="margin-top: 5px;" width="450" src="paris.jpg">
+            </div>    
+
+        </div>
+
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+
+    </script>
+
+
+
+</body>
+</html>

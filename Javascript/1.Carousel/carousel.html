@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Carousel</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--FONT (AUDIOWIDE)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body style="background-image: url(img/background3.jpg); background-size: cover;">
+
+
+    <div class="container blue-grey" style="margin-top: 50px;">
+
+        <!--TINY CAROUSEL-->
+        <h4 class="center white-text">Tiny Carousel</h4>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/1.png"></a>
+            <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/4.png"></a>
+            <a class="carousel-item" href="#five!"><img src="img/5.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="img/6.png"></a>
+        </div>
+
+
+        <!--LARGE CAROUSEL-->
+        <h4 class="center white-text">Large Carousel</h4>
+
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="img/1.png"></a>
+            <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/4.png"></a>
+            <a class="carousel-item" href="#five!"><img src="img/5.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="img/6.png"></a>
+      </div>
+
+
+      <br><br><br>
+
+
+
+    </div> <!--penutup class container-->
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+    <!--VANILLA JAVASCRIPT-->
+    <script>
+
+      const carousel = document.querySelectorAll('.carousel');
+      M.Carousel.init(carousel, {
+
+        dist: -150
+      });
+
+    </script>
+
+
+    
+</body>
+</html>
